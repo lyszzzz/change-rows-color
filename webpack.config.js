@@ -14,7 +14,7 @@ module.exports = {
         //存放到目录
         path: path.join(__dirname, './dist'),
         //生成的文件名
-        filename: 'bundle.js',
+        filename: 'js/bundle.js',
     },
     plugins: [
         //new构造函数，创建插件的实例对象
@@ -39,7 +39,8 @@ module.exports = {
                 test: /\.jpg|png|gif$/, use: {
                     loader: "url-loader",
                     options: {
-                        limit: 422327
+                        limit: 422327,
+                        "outputPath":'image'
                     }
                 }
 
