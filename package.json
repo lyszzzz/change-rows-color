@@ -4,6 +4,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "webpack serve",
+    "build": "webpack --mode production",
     "serve": "vue-cli-service serve"
   },
   "keywords": [],
