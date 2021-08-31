@@ -39,8 +39,9 @@ module.exports = {
                 test: /\.jpg|png|gif$/, use: {
                     loader: "url-loader",
                     options: {
-                        limit: 422327,
-                        "outputPath":'image'
+                        //在limit范围内的会转成base64文件，不会打包到dist中
+                        limit: 10,
+                        outputPath:'image'
                     }
                 }
 
